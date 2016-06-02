@@ -8,8 +8,3 @@ $(WKPOOL): quicksort.c queue.h
 clean:
 	rm -f $(WKPOOL)
 
-run:
-	./$(WKPOOL) $1 $2 $3
-
-x:
-	make clean && make quicksort && ./quicksort 2 unsorted.txt sorted.txt

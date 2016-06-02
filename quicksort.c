@@ -180,7 +180,6 @@ int main(int argc, char** argv){
 	listSize = 0;
 	srand(time(NULL));
 
-	initStack();
 	initQueue();
 
 	list = getList(argv[2]);
@@ -214,7 +213,6 @@ int main(int argc, char** argv){
 	free(lock);
 	free(mailbox);
 
-	killStack();
 	destroyQueue();
 
 	return 0;
